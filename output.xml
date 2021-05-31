@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.0 (Python 3.9.2 on win32)" generated="20210530 20:12:52.336" rpa="false" schemaversion="2">
+<robot generator="Robot 4.0 (Python 3.9.2 on win32)" generated="20210531 10:59:00.667" rpa="false" schemaversion="2">
 <suite id="s1" name="Miro Signup test" source="C:\Users\ranan\Git\Miro\Miro_Test\tests\TestScript\Miro_Signup_test.robot">
 <test id="s1-t1" name="Successfull Signup">
 <kw name="Create Miro account">
@@ -10,34 +10,34 @@
 <arg>about:blank</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20210530 20:12:52.584" level="INFO">Opening browser 'Chrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20210530 20:12:52.584" endtime="20210530 20:12:53.920"/>
+<msg timestamp="20210531 10:59:00.897" level="INFO">Opening browser 'Chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20210531 10:59:00.895" endtime="20210531 10:59:01.974"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20210530 20:12:53.920" endtime="20210530 20:12:54.044"/>
+<status status="PASS" starttime="20210531 10:59:01.974" endtime="20210531 10:59:02.101"/>
 </kw>
 <kw name="Go to miro singup page">
 <doc>Open Miro signup page</doc>
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${miro_signup_url}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20210530 20:12:54.045" level="INFO">Opening url 'https://miro.com/signup/'</msg>
-<status status="PASS" starttime="20210530 20:12:54.045" endtime="20210530 20:12:56.572"/>
+<msg timestamp="20210531 10:59:02.103" level="INFO">Opening url 'https://miro.com/signup/'</msg>
+<status status="PASS" starttime="20210531 10:59:02.103" endtime="20210531 10:59:04.671"/>
 </kw>
 <kw name="Get started free today page should be open">
 <doc>Verifies the signup page</doc>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Get started free today</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20210530 20:12:56.588" level="INFO">Current page contains text 'Get started free today'.</msg>
-<status status="PASS" starttime="20210530 20:12:56.573" endtime="20210530 20:12:56.589"/>
+<msg timestamp="20210531 10:59:04.683" level="INFO">Current page contains text 'Get started free today'.</msg>
+<status status="PASS" starttime="20210531 10:59:04.671" endtime="20210531 10:59:04.683"/>
 </kw>
-<status status="PASS" starttime="20210530 20:12:56.572" endtime="20210530 20:12:56.589"/>
+<status status="PASS" starttime="20210531 10:59:04.671" endtime="20210531 10:59:04.684"/>
 </kw>
-<status status="PASS" starttime="20210530 20:12:54.044" endtime="20210530 20:12:56.589"/>
+<status status="PASS" starttime="20210531 10:59:02.102" endtime="20210531 10:59:04.684"/>
 </kw>
-<status status="PASS" starttime="20210530 20:12:52.584" endtime="20210530 20:12:56.589"/>
+<status status="PASS" starttime="20210531 10:59:00.894" endtime="20210531 10:59:04.684"/>
 </kw>
 <kw name="Enter Username">
 <arg>${user_name}</arg>
@@ -46,10 +46,10 @@
 <arg>id:name</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210530 20:12:56.590" level="INFO">Typing text 'Abcdefg' into text field 'id:name'.</msg>
-<status status="PASS" starttime="20210530 20:12:56.589" endtime="20210530 20:12:56.654"/>
+<msg timestamp="20210531 10:59:04.685" level="INFO">Typing text 'Abcdefg' into text field 'id:name'.</msg>
+<status status="PASS" starttime="20210531 10:59:04.685" endtime="20210531 10:59:04.749"/>
 </kw>
-<status status="PASS" starttime="20210530 20:12:56.589" endtime="20210530 20:12:56.654"/>
+<status status="PASS" starttime="20210531 10:59:04.684" endtime="20210531 10:59:04.749"/>
 </kw>
 <kw name="Enter EmailID">
 <arg>${email_id}</arg>
@@ -58,10 +58,10 @@
 <arg>id:email</arg>
 <arg>${emailid}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210530 20:12:56.655" level="INFO">Typing text 'teabcd12345@test.com' into text field 'id:email'.</msg>
-<status status="PASS" starttime="20210530 20:12:56.655" endtime="20210530 20:12:56.730"/>
+<msg timestamp="20210531 10:59:04.750" level="INFO">Typing text 'teabcd12345@test.com' into text field 'id:email'.</msg>
+<status status="PASS" starttime="20210531 10:59:04.750" endtime="20210531 10:59:04.824"/>
 </kw>
-<status status="PASS" starttime="20210530 20:12:56.654" endtime="20210530 20:12:56.730"/>
+<status status="PASS" starttime="20210531 10:59:04.749" endtime="20210531 10:59:04.824"/>
 </kw>
 <kw name="Enter Password">
 <arg>${password}</arg>
@@ -70,46 +70,46 @@
 <arg>id:password</arg>
 <arg>${pswd}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210530 20:12:56.732" level="INFO">Typing text 'P@ssw0rd_123' into text field 'id:password'.</msg>
-<status status="PASS" starttime="20210530 20:12:56.731" endtime="20210530 20:12:56.838"/>
+<msg timestamp="20210531 10:59:04.826" level="INFO">Typing text 'P@ssw0rd_123' into text field 'id:password'.</msg>
+<status status="PASS" starttime="20210531 10:59:04.825" endtime="20210531 10:59:04.912"/>
 </kw>
-<status status="PASS" starttime="20210530 20:12:56.730" endtime="20210530 20:12:56.838"/>
+<status status="PASS" starttime="20210531 10:59:04.825" endtime="20210531 10:59:04.913"/>
 </kw>
 <kw name="Select Terms Checkbox">
 <doc>Selects Terms and Privacy policy checkbox</doc>
 <kw name="Execute Javascript" library="SeleniumLibrary">
 <arg>$('#signup-terms').click()</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20210530 20:12:56.840" level="INFO">Executing JavaScript:
+<msg timestamp="20210531 10:59:04.913" level="INFO">Executing JavaScript:
 $('#signup-terms').click()
 Without any arguments.</msg>
-<status status="PASS" starttime="20210530 20:12:56.839" endtime="20210530 20:12:56.852"/>
+<status status="PASS" starttime="20210531 10:59:04.913" endtime="20210531 10:59:04.922"/>
 </kw>
-<status status="PASS" starttime="20210530 20:12:56.838" endtime="20210530 20:12:56.853"/>
+<status status="PASS" starttime="20210531 10:59:04.913" endtime="20210531 10:59:04.922"/>
 </kw>
 <kw name="Click on Get started now button">
 <doc>Clicks on Get started now</doc>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20210530 20:12:57.256" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20210530 20:12:56.853" endtime="20210530 20:12:57.257"/>
+<msg timestamp="20210531 10:59:05.312" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210531 10:59:04.923" endtime="20210531 10:59:05.312"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>class:signup__submit</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20210530 20:12:57.257" level="INFO">Clicking button 'class:signup__submit'.</msg>
-<status status="PASS" starttime="20210530 20:12:57.257" endtime="20210530 20:12:58.120"/>
+<msg timestamp="20210531 10:59:05.312" level="INFO">Clicking button 'class:signup__submit'.</msg>
+<status status="PASS" starttime="20210531 10:59:05.312" endtime="20210531 10:59:06.195"/>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20210530 20:12:58.503" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20210530 20:12:58.120" endtime="20210530 20:12:58.503"/>
+<msg timestamp="20210531 10:59:06.588" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-10.png"&gt;&lt;img src="selenium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210531 10:59:06.195" endtime="20210531 10:59:06.588"/>
 </kw>
 <kw name="Get Title" library="SeleniumLibrary">
 <var>${page_title}</var>
 <doc>Returns the title of the current page.</doc>
-<msg timestamp="20210530 20:12:58.507" level="INFO">${page_title} = Sign up | Miro | Online Whiteboard for Visual Collaboration</msg>
-<status status="PASS" starttime="20210530 20:12:58.503" endtime="20210530 20:12:58.507"/>
+<msg timestamp="20210531 10:59:06.592" level="INFO">${page_title} = Sign up | Miro | Online Whiteboard for Visual Collaboration</msg>
+<status status="PASS" starttime="20210531 10:59:06.588" endtime="20210531 10:59:06.592"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <arg>"${page_title}" == "Please check your email, Online Whiteboard | Miro"</arg>
@@ -123,30 +123,30 @@ Without any arguments.</msg>
 <var>${get_text}</var>
 <arg>xpath://div[contains(text(),'Sorry, this email is already registered')]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20210530 20:12:58.524" level="INFO">${get_text} = Sorry, this email is already registered</msg>
-<status status="PASS" starttime="20210530 20:12:58.508" endtime="20210530 20:12:58.524"/>
+<msg timestamp="20210531 10:59:06.611" level="INFO">${get_text} = Sorry, this email is already registered</msg>
+<status status="PASS" starttime="20210531 10:59:06.593" endtime="20210531 10:59:06.612"/>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <arg>Sorry, this email is already registered</arg>
 <arg>${get_text}</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" starttime="20210530 20:12:58.524" endtime="20210530 20:12:58.524"/>
+<status status="PASS" starttime="20210531 10:59:06.612" endtime="20210531 10:59:06.612"/>
 </kw>
-<status status="PASS" starttime="20210530 20:12:58.507" endtime="20210530 20:12:58.524"/>
+<status status="PASS" starttime="20210531 10:59:06.593" endtime="20210531 10:59:06.612"/>
 </kw>
-<status status="PASS" starttime="20210530 20:12:58.507" endtime="20210530 20:12:58.524"/>
+<status status="PASS" starttime="20210531 10:59:06.592" endtime="20210531 10:59:06.612"/>
 </kw>
-<status status="PASS" starttime="20210530 20:12:56.853" endtime="20210530 20:12:58.524"/>
+<status status="PASS" starttime="20210531 10:59:04.923" endtime="20210531 10:59:06.612"/>
 </kw>
-<status status="PASS" starttime="20210530 20:12:52.584" endtime="20210530 20:12:58.525"/>
+<status status="PASS" starttime="20210531 10:59:00.893" endtime="20210531 10:59:06.612"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20210530 20:12:58.525" endtime="20210530 20:13:00.751"/>
+<status status="PASS" starttime="20210531 10:59:06.613" endtime="20210531 10:59:08.865"/>
 </kw>
 <doc>This test case will verify the successfull creation of the account with Miro.</doc>
 <tag>Scenario1</tag>
-<status status="PASS" starttime="20210530 20:12:52.552" endtime="20210530 20:13:00.751"/>
+<status status="PASS" starttime="20210531 10:59:00.857" endtime="20210531 10:59:08.866"/>
 </test>
 <test id="s1-t2" name="No account should be created if Terms and Privacy policy checkbox not selected">
 <kw name="Do not select Terms and Privacy policy">
@@ -157,34 +157,34 @@ Without any arguments.</msg>
 <arg>about:blank</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20210530 20:13:00.751" level="INFO">Opening browser 'Chrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20210530 20:13:00.751" endtime="20210530 20:13:01.849"/>
+<msg timestamp="20210531 10:59:08.869" level="INFO">Opening browser 'Chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20210531 10:59:08.869" endtime="20210531 10:59:09.970"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20210530 20:13:01.849" endtime="20210530 20:13:01.979"/>
+<status status="PASS" starttime="20210531 10:59:09.971" endtime="20210531 10:59:10.100"/>
 </kw>
 <kw name="Go to miro singup page">
 <doc>Open Miro signup page</doc>
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${miro_signup_url}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20210530 20:13:01.981" level="INFO">Opening url 'https://miro.com/signup/'</msg>
-<status status="PASS" starttime="20210530 20:13:01.980" endtime="20210530 20:13:04.084"/>
+<msg timestamp="20210531 10:59:10.102" level="INFO">Opening url 'https://miro.com/signup/'</msg>
+<status status="PASS" starttime="20210531 10:59:10.101" endtime="20210531 10:59:12.030"/>
 </kw>
 <kw name="Get started free today page should be open">
 <doc>Verifies the signup page</doc>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Get started free today</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20210530 20:13:04.095" level="INFO">Current page contains text 'Get started free today'.</msg>
-<status status="PASS" starttime="20210530 20:13:04.086" endtime="20210530 20:13:04.095"/>
+<msg timestamp="20210531 10:59:12.044" level="INFO">Current page contains text 'Get started free today'.</msg>
+<status status="PASS" starttime="20210531 10:59:12.030" endtime="20210531 10:59:12.044"/>
 </kw>
-<status status="PASS" starttime="20210530 20:13:04.085" endtime="20210530 20:13:04.096"/>
+<status status="PASS" starttime="20210531 10:59:12.030" endtime="20210531 10:59:12.044"/>
 </kw>
-<status status="PASS" starttime="20210530 20:13:01.980" endtime="20210530 20:13:04.096"/>
+<status status="PASS" starttime="20210531 10:59:10.101" endtime="20210531 10:59:12.044"/>
 </kw>
-<status status="PASS" starttime="20210530 20:13:00.751" endtime="20210530 20:13:04.096"/>
+<status status="PASS" starttime="20210531 10:59:08.869" endtime="20210531 10:59:12.044"/>
 </kw>
 <kw name="Enter Username">
 <arg>${user_name}</arg>
@@ -193,10 +193,10 @@ Without any arguments.</msg>
 <arg>id:name</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210530 20:13:04.097" level="INFO">Typing text 'Abcdefg' into text field 'id:name'.</msg>
-<status status="PASS" starttime="20210530 20:13:04.097" endtime="20210530 20:13:04.157"/>
+<msg timestamp="20210531 10:59:12.045" level="INFO">Typing text 'Abcdefg' into text field 'id:name'.</msg>
+<status status="PASS" starttime="20210531 10:59:12.045" endtime="20210531 10:59:12.115"/>
 </kw>
-<status status="PASS" starttime="20210530 20:13:04.096" endtime="20210530 20:13:04.157"/>
+<status status="PASS" starttime="20210531 10:59:12.045" endtime="20210531 10:59:12.116"/>
 </kw>
 <kw name="Enter EmailID">
 <arg>${email_id}</arg>
@@ -205,10 +205,10 @@ Without any arguments.</msg>
 <arg>id:email</arg>
 <arg>${emailid}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210530 20:13:04.158" level="INFO">Typing text 'teabcd12345@test.com' into text field 'id:email'.</msg>
-<status status="PASS" starttime="20210530 20:13:04.157" endtime="20210530 20:13:04.228"/>
+<msg timestamp="20210531 10:59:12.117" level="INFO">Typing text 'teabcd12345@test.com' into text field 'id:email'.</msg>
+<status status="PASS" starttime="20210531 10:59:12.116" endtime="20210531 10:59:12.195"/>
 </kw>
-<status status="PASS" starttime="20210530 20:13:04.157" endtime="20210530 20:13:04.228"/>
+<status status="PASS" starttime="20210531 10:59:12.116" endtime="20210531 10:59:12.196"/>
 </kw>
 <kw name="Enter Password">
 <arg>${password}</arg>
@@ -217,48 +217,48 @@ Without any arguments.</msg>
 <arg>id:password</arg>
 <arg>${pswd}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210530 20:13:04.229" level="INFO">Typing text 'P@ssw0rd_123' into text field 'id:password'.</msg>
-<status status="PASS" starttime="20210530 20:13:04.228" endtime="20210530 20:13:04.312"/>
+<msg timestamp="20210531 10:59:12.197" level="INFO">Typing text 'P@ssw0rd_123' into text field 'id:password'.</msg>
+<status status="PASS" starttime="20210531 10:59:12.196" endtime="20210531 10:59:12.323"/>
 </kw>
-<status status="PASS" starttime="20210530 20:13:04.228" endtime="20210530 20:13:04.312"/>
+<status status="PASS" starttime="20210531 10:59:12.196" endtime="20210531 10:59:12.323"/>
 </kw>
 <kw name="Click Get started now button">
 <doc>Clicks on Get started now button</doc>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>class:signup__submit</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20210530 20:13:04.314" level="INFO">Clicking button 'class:signup__submit'.</msg>
-<status status="PASS" starttime="20210530 20:13:04.313" endtime="20210530 20:13:05.121"/>
+<msg timestamp="20210531 10:59:12.324" level="INFO">Clicking button 'class:signup__submit'.</msg>
+<status status="PASS" starttime="20210531 10:59:12.323" endtime="20210531 10:59:13.161"/>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20210530 20:13:05.481" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20210530 20:13:05.121" endtime="20210530 20:13:05.482"/>
+<msg timestamp="20210531 10:59:13.603" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-11.png"&gt;&lt;img src="selenium-screenshot-11.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210531 10:59:13.162" endtime="20210531 10:59:13.604"/>
 </kw>
-<status status="PASS" starttime="20210530 20:13:04.313" endtime="20210530 20:13:05.482"/>
+<status status="PASS" starttime="20210531 10:59:12.323" endtime="20210531 10:59:13.604"/>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <var>${get_text}</var>
 <arg>xpath://div[contains(text(),'Please agree with the Terms to sign up.')]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20210530 20:13:05.500" level="INFO">${get_text} = Please agree with the Terms to sign up.</msg>
-<status status="PASS" starttime="20210530 20:13:05.482" endtime="20210530 20:13:05.500"/>
+<msg timestamp="20210531 10:59:13.621" level="INFO">${get_text} = Please agree with the Terms to sign up.</msg>
+<status status="PASS" starttime="20210531 10:59:13.604" endtime="20210531 10:59:13.621"/>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <arg>Please agree with the Terms to sign up.</arg>
 <arg>${get_text}</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" starttime="20210530 20:13:05.500" endtime="20210530 20:13:05.500"/>
+<status status="PASS" starttime="20210531 10:59:13.621" endtime="20210531 10:59:13.621"/>
 </kw>
-<status status="PASS" starttime="20210530 20:13:00.751" endtime="20210530 20:13:05.500"/>
+<status status="PASS" starttime="20210531 10:59:08.868" endtime="20210531 10:59:13.622"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20210530 20:13:05.501" endtime="20210530 20:13:07.697"/>
+<status status="PASS" starttime="20210531 10:59:13.623" endtime="20210531 10:59:15.823"/>
 </kw>
 <doc>This test case will verify whether terms and privacy policy is selected.</doc>
 <tag>Scenario2</tag>
-<status status="PASS" starttime="20210530 20:13:00.751" endtime="20210530 20:13:07.697"/>
+<status status="PASS" starttime="20210531 10:59:08.868" endtime="20210531 10:59:15.824"/>
 </test>
 <test id="s1-t3" name="User message should be prompt if no password provided">
 <kw name="Do not enter the password">
@@ -269,34 +269,34 @@ Without any arguments.</msg>
 <arg>about:blank</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20210530 20:13:07.697" level="INFO">Opening browser 'Chrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20210530 20:13:07.697" endtime="20210530 20:13:08.801"/>
+<msg timestamp="20210531 10:59:15.835" level="INFO">Opening browser 'Chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20210531 10:59:15.834" endtime="20210531 10:59:16.892"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20210530 20:13:08.801" endtime="20210530 20:13:08.927"/>
+<status status="PASS" starttime="20210531 10:59:16.892" endtime="20210531 10:59:17.039"/>
 </kw>
 <kw name="Go to miro singup page">
 <doc>Open Miro signup page</doc>
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${miro_signup_url}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20210530 20:13:08.928" level="INFO">Opening url 'https://miro.com/signup/'</msg>
-<status status="PASS" starttime="20210530 20:13:08.928" endtime="20210530 20:13:11.132"/>
+<msg timestamp="20210531 10:59:17.040" level="INFO">Opening url 'https://miro.com/signup/'</msg>
+<status status="PASS" starttime="20210531 10:59:17.040" endtime="20210531 10:59:19.044"/>
 </kw>
 <kw name="Get started free today page should be open">
 <doc>Verifies the signup page</doc>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Get started free today</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20210530 20:13:11.146" level="INFO">Current page contains text 'Get started free today'.</msg>
-<status status="PASS" starttime="20210530 20:13:11.133" endtime="20210530 20:13:11.146"/>
+<msg timestamp="20210531 10:59:19.056" level="INFO">Current page contains text 'Get started free today'.</msg>
+<status status="PASS" starttime="20210531 10:59:19.044" endtime="20210531 10:59:19.056"/>
 </kw>
-<status status="PASS" starttime="20210530 20:13:11.132" endtime="20210530 20:13:11.146"/>
+<status status="PASS" starttime="20210531 10:59:19.044" endtime="20210531 10:59:19.056"/>
 </kw>
-<status status="PASS" starttime="20210530 20:13:08.927" endtime="20210530 20:13:11.146"/>
+<status status="PASS" starttime="20210531 10:59:17.039" endtime="20210531 10:59:19.056"/>
 </kw>
-<status status="PASS" starttime="20210530 20:13:07.697" endtime="20210530 20:13:11.146"/>
+<status status="PASS" starttime="20210531 10:59:15.834" endtime="20210531 10:59:19.057"/>
 </kw>
 <kw name="Enter Username">
 <arg>${user_name}</arg>
@@ -305,10 +305,10 @@ Without any arguments.</msg>
 <arg>id:name</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210530 20:13:11.147" level="INFO">Typing text 'Abcdefg' into text field 'id:name'.</msg>
-<status status="PASS" starttime="20210530 20:13:11.147" endtime="20210530 20:13:11.203"/>
+<msg timestamp="20210531 10:59:19.057" level="INFO">Typing text 'Abcdefg' into text field 'id:name'.</msg>
+<status status="PASS" starttime="20210531 10:59:19.057" endtime="20210531 10:59:19.117"/>
 </kw>
-<status status="PASS" starttime="20210530 20:13:11.146" endtime="20210530 20:13:11.203"/>
+<status status="PASS" starttime="20210531 10:59:19.057" endtime="20210531 10:59:19.117"/>
 </kw>
 <kw name="Enter EmailID">
 <arg>${email_id}</arg>
@@ -317,10 +317,10 @@ Without any arguments.</msg>
 <arg>id:email</arg>
 <arg>${emailid}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210530 20:13:11.204" level="INFO">Typing text 'teabcd12345@test.com' into text field 'id:email'.</msg>
-<status status="PASS" starttime="20210530 20:13:11.204" endtime="20210530 20:13:11.270"/>
+<msg timestamp="20210531 10:59:19.118" level="INFO">Typing text 'teabcd12345@test.com' into text field 'id:email'.</msg>
+<status status="PASS" starttime="20210531 10:59:19.118" endtime="20210531 10:59:19.187"/>
 </kw>
-<status status="PASS" starttime="20210530 20:13:11.203" endtime="20210530 20:13:11.270"/>
+<status status="PASS" starttime="20210531 10:59:19.117" endtime="20210531 10:59:19.187"/>
 </kw>
 <kw name="Enter Password">
 <arg>${EMPTY}</arg>
@@ -329,60 +329,60 @@ Without any arguments.</msg>
 <arg>id:password</arg>
 <arg>${pswd}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210530 20:13:11.271" level="INFO">Typing text '' into text field 'id:password'.</msg>
-<status status="PASS" starttime="20210530 20:13:11.271" endtime="20210530 20:13:11.325"/>
+<msg timestamp="20210531 10:59:19.188" level="INFO">Typing text '' into text field 'id:password'.</msg>
+<status status="PASS" starttime="20210531 10:59:19.188" endtime="20210531 10:59:19.239"/>
 </kw>
-<status status="PASS" starttime="20210530 20:13:11.270" endtime="20210530 20:13:11.326"/>
+<status status="PASS" starttime="20210531 10:59:19.187" endtime="20210531 10:59:19.239"/>
 </kw>
 <kw name="Select Terms Checkbox">
 <doc>Selects Terms and Privacy policy checkbox</doc>
 <kw name="Execute Javascript" library="SeleniumLibrary">
 <arg>$('#signup-terms').click()</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20210530 20:13:11.326" level="INFO">Executing JavaScript:
+<msg timestamp="20210531 10:59:19.240" level="INFO">Executing JavaScript:
 $('#signup-terms').click()
 Without any arguments.</msg>
-<status status="PASS" starttime="20210530 20:13:11.326" endtime="20210530 20:13:11.334"/>
+<status status="PASS" starttime="20210531 10:59:19.240" endtime="20210531 10:59:19.246"/>
 </kw>
-<status status="PASS" starttime="20210530 20:13:11.326" endtime="20210530 20:13:11.334"/>
+<status status="PASS" starttime="20210531 10:59:19.240" endtime="20210531 10:59:19.246"/>
 </kw>
 <kw name="Click Get started now button">
 <doc>Clicks on Get started now button</doc>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>class:signup__submit</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20210530 20:13:11.335" level="INFO">Clicking button 'class:signup__submit'.</msg>
-<status status="PASS" starttime="20210530 20:13:11.334" endtime="20210530 20:13:11.406"/>
+<msg timestamp="20210531 10:59:19.246" level="INFO">Clicking button 'class:signup__submit'.</msg>
+<status status="PASS" starttime="20210531 10:59:19.246" endtime="20210531 10:59:19.323"/>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20210530 20:13:11.791" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20210530 20:13:11.406" endtime="20210530 20:13:11.791"/>
+<msg timestamp="20210531 10:59:19.718" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-12.png"&gt;&lt;img src="selenium-screenshot-12.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210531 10:59:19.323" endtime="20210531 10:59:19.718"/>
 </kw>
-<status status="PASS" starttime="20210530 20:13:11.334" endtime="20210530 20:13:11.791"/>
+<status status="PASS" starttime="20210531 10:59:19.246" endtime="20210531 10:59:19.718"/>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <var>${get_text}</var>
 <arg>xpath://div[contains(text(),'Please enter your password.')]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20210530 20:13:11.810" level="INFO">${get_text} = Please enter your password.</msg>
-<status status="PASS" starttime="20210530 20:13:11.791" endtime="20210530 20:13:11.810"/>
+<msg timestamp="20210531 10:59:19.736" level="INFO">${get_text} = Please enter your password.</msg>
+<status status="PASS" starttime="20210531 10:59:19.718" endtime="20210531 10:59:19.736"/>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <arg>Please enter your password.</arg>
 <arg>${get_text}</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" starttime="20210530 20:13:11.810" endtime="20210530 20:13:11.810"/>
+<status status="PASS" starttime="20210531 10:59:19.736" endtime="20210531 10:59:19.737"/>
 </kw>
-<status status="PASS" starttime="20210530 20:13:07.697" endtime="20210530 20:13:11.810"/>
+<status status="PASS" starttime="20210531 10:59:15.833" endtime="20210531 10:59:19.737"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20210530 20:13:11.811" endtime="20210530 20:13:13.999"/>
+<status status="PASS" starttime="20210531 10:59:19.737" endtime="20210531 10:59:21.976"/>
 </kw>
 <doc>"Please enter your password" message should be displayed if no password entered in the Password textbox.</doc>
 <tag>Scenario3</tag>
-<status status="PASS" starttime="20210530 20:13:07.697" endtime="20210530 20:13:13.999"/>
+<status status="PASS" starttime="20210531 10:59:15.830" endtime="20210531 10:59:21.977"/>
 </test>
 <test id="s1-t4" name="User message should be prompt if no Name provided">
 <kw name="Do not enter Name">
@@ -393,34 +393,34 @@ Without any arguments.</msg>
 <arg>about:blank</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20210530 20:13:14.005" level="INFO">Opening browser 'Chrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20210530 20:13:14.005" endtime="20210530 20:13:15.083"/>
+<msg timestamp="20210531 10:59:21.989" level="INFO">Opening browser 'Chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20210531 10:59:21.988" endtime="20210531 10:59:23.093"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20210530 20:13:15.083" endtime="20210530 20:13:15.211"/>
+<status status="PASS" starttime="20210531 10:59:23.093" endtime="20210531 10:59:23.213"/>
 </kw>
 <kw name="Go to miro singup page">
 <doc>Open Miro signup page</doc>
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${miro_signup_url}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20210530 20:13:15.212" level="INFO">Opening url 'https://miro.com/signup/'</msg>
-<status status="PASS" starttime="20210530 20:13:15.212" endtime="20210530 20:13:17.435"/>
+<msg timestamp="20210531 10:59:23.214" level="INFO">Opening url 'https://miro.com/signup/'</msg>
+<status status="PASS" starttime="20210531 10:59:23.214" endtime="20210531 10:59:24.991"/>
 </kw>
 <kw name="Get started free today page should be open">
 <doc>Verifies the signup page</doc>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Get started free today</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20210530 20:13:17.444" level="INFO">Current page contains text 'Get started free today'.</msg>
-<status status="PASS" starttime="20210530 20:13:17.435" endtime="20210530 20:13:17.445"/>
+<msg timestamp="20210531 10:59:25.001" level="INFO">Current page contains text 'Get started free today'.</msg>
+<status status="PASS" starttime="20210531 10:59:24.991" endtime="20210531 10:59:25.001"/>
 </kw>
-<status status="PASS" starttime="20210530 20:13:17.435" endtime="20210530 20:13:17.445"/>
+<status status="PASS" starttime="20210531 10:59:24.991" endtime="20210531 10:59:25.001"/>
 </kw>
-<status status="PASS" starttime="20210530 20:13:15.211" endtime="20210530 20:13:17.445"/>
+<status status="PASS" starttime="20210531 10:59:23.214" endtime="20210531 10:59:25.002"/>
 </kw>
-<status status="PASS" starttime="20210530 20:13:14.005" endtime="20210530 20:13:17.445"/>
+<status status="PASS" starttime="20210531 10:59:21.987" endtime="20210531 10:59:25.002"/>
 </kw>
 <kw name="Enter Username">
 <arg>${EMPTY}</arg>
@@ -429,10 +429,10 @@ Without any arguments.</msg>
 <arg>id:name</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210530 20:13:17.446" level="INFO">Typing text '' into text field 'id:name'.</msg>
-<status status="PASS" starttime="20210530 20:13:17.446" endtime="20210530 20:13:17.498"/>
+<msg timestamp="20210531 10:59:25.004" level="INFO">Typing text '' into text field 'id:name'.</msg>
+<status status="PASS" starttime="20210531 10:59:25.003" endtime="20210531 10:59:25.063"/>
 </kw>
-<status status="PASS" starttime="20210530 20:13:17.445" endtime="20210530 20:13:17.498"/>
+<status status="PASS" starttime="20210531 10:59:25.002" endtime="20210531 10:59:25.064"/>
 </kw>
 <kw name="Enter EmailID">
 <arg>${email_id}</arg>
@@ -441,10 +441,10 @@ Without any arguments.</msg>
 <arg>id:email</arg>
 <arg>${emailid}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210530 20:13:17.499" level="INFO">Typing text 'teabcd12345@test.com' into text field 'id:email'.</msg>
-<status status="PASS" starttime="20210530 20:13:17.499" endtime="20210530 20:13:17.570"/>
+<msg timestamp="20210531 10:59:25.065" level="INFO">Typing text 'teabcd12345@test.com' into text field 'id:email'.</msg>
+<status status="PASS" starttime="20210531 10:59:25.065" endtime="20210531 10:59:25.134"/>
 </kw>
-<status status="PASS" starttime="20210530 20:13:17.499" endtime="20210530 20:13:17.570"/>
+<status status="PASS" starttime="20210531 10:59:25.064" endtime="20210531 10:59:25.134"/>
 </kw>
 <kw name="Enter Password">
 <arg>${password}</arg>
@@ -453,65 +453,65 @@ Without any arguments.</msg>
 <arg>id:password</arg>
 <arg>${pswd}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210530 20:13:17.571" level="INFO">Typing text 'P@ssw0rd_123' into text field 'id:password'.</msg>
-<status status="PASS" starttime="20210530 20:13:17.570" endtime="20210530 20:13:17.653"/>
+<msg timestamp="20210531 10:59:25.135" level="INFO">Typing text 'P@ssw0rd_123' into text field 'id:password'.</msg>
+<status status="PASS" starttime="20210531 10:59:25.135" endtime="20210531 10:59:25.224"/>
 </kw>
-<status status="PASS" starttime="20210530 20:13:17.570" endtime="20210530 20:13:17.654"/>
+<status status="PASS" starttime="20210531 10:59:25.135" endtime="20210531 10:59:25.225"/>
 </kw>
 <kw name="Select Terms Checkbox">
 <doc>Selects Terms and Privacy policy checkbox</doc>
 <kw name="Execute Javascript" library="SeleniumLibrary">
 <arg>$('#signup-terms').click()</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20210530 20:13:17.655" level="INFO">Executing JavaScript:
+<msg timestamp="20210531 10:59:25.226" level="INFO">Executing JavaScript:
 $('#signup-terms').click()
 Without any arguments.</msg>
-<status status="PASS" starttime="20210530 20:13:17.654" endtime="20210530 20:13:17.664"/>
+<status status="PASS" starttime="20210531 10:59:25.225" endtime="20210531 10:59:25.235"/>
 </kw>
-<status status="PASS" starttime="20210530 20:13:17.654" endtime="20210530 20:13:17.664"/>
+<status status="PASS" starttime="20210531 10:59:25.225" endtime="20210531 10:59:25.235"/>
 </kw>
 <kw name="Click Get started now button">
 <doc>Clicks on Get started now button</doc>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>class:signup__submit</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20210530 20:13:17.665" level="INFO">Clicking button 'class:signup__submit'.</msg>
-<status status="PASS" starttime="20210530 20:13:17.664" endtime="20210530 20:13:18.560"/>
+<msg timestamp="20210531 10:59:25.235" level="INFO">Clicking button 'class:signup__submit'.</msg>
+<status status="PASS" starttime="20210531 10:59:25.235" endtime="20210531 10:59:26.035"/>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20210530 20:13:18.984" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20210530 20:13:18.560" endtime="20210530 20:13:18.984"/>
+<msg timestamp="20210531 10:59:26.441" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-13.png"&gt;&lt;img src="selenium-screenshot-13.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210531 10:59:26.036" endtime="20210531 10:59:26.441"/>
 </kw>
-<status status="PASS" starttime="20210530 20:13:17.664" endtime="20210530 20:13:18.984"/>
+<status status="PASS" starttime="20210531 10:59:25.235" endtime="20210531 10:59:26.442"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>xpath://div[contains(text(),'Please enter your name.')]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20210530 20:13:18.984" endtime="20210530 20:13:19.013"/>
+<status status="PASS" starttime="20210531 10:59:26.442" endtime="20210531 10:59:26.461"/>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <var>${get_text}</var>
 <arg>xpath://div[contains(text(),'Please enter your name.')]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20210530 20:13:19.029" level="INFO">${get_text} = Please enter your name.</msg>
-<status status="PASS" starttime="20210530 20:13:19.013" endtime="20210530 20:13:19.029"/>
+<msg timestamp="20210531 10:59:26.473" level="INFO">${get_text} = Please enter your name.</msg>
+<status status="PASS" starttime="20210531 10:59:26.461" endtime="20210531 10:59:26.473"/>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <arg>Please enter your name.</arg>
 <arg>${get_text}</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" starttime="20210530 20:13:19.029" endtime="20210530 20:13:19.029"/>
+<status status="PASS" starttime="20210531 10:59:26.473" endtime="20210531 10:59:26.473"/>
 </kw>
-<status status="PASS" starttime="20210530 20:13:14.005" endtime="20210530 20:13:19.029"/>
+<status status="PASS" starttime="20210531 10:59:21.986" endtime="20210531 10:59:26.473"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20210530 20:13:19.030" endtime="20210530 20:13:21.215"/>
+<status status="PASS" starttime="20210531 10:59:26.474" endtime="20210531 10:59:28.673"/>
 </kw>
 <doc>"Please enter your Name" message should be displayed if no Name entered in the Name text box</doc>
 <tag>Scenario4</tag>
-<status status="PASS" starttime="20210530 20:13:14.005" endtime="20210530 20:13:21.215"/>
+<status status="PASS" starttime="20210531 10:59:21.984" endtime="20210531 10:59:28.674"/>
 </test>
 <test id="s1-t5" name="User message should be prompt if no email id provided">
 <kw name="Do not enter email">
@@ -522,34 +522,34 @@ Without any arguments.</msg>
 <arg>about:blank</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20210530 20:13:21.215" level="INFO">Opening browser 'Chrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20210530 20:13:21.215" endtime="20210530 20:13:22.349"/>
+<msg timestamp="20210531 10:59:28.688" level="INFO">Opening browser 'Chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20210531 10:59:28.687" endtime="20210531 10:59:29.865"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20210530 20:13:22.351" endtime="20210530 20:13:22.473"/>
+<status status="PASS" starttime="20210531 10:59:29.866" endtime="20210531 10:59:29.979"/>
 </kw>
 <kw name="Go to miro singup page">
 <doc>Open Miro signup page</doc>
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${miro_signup_url}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20210530 20:13:22.474" level="INFO">Opening url 'https://miro.com/signup/'</msg>
-<status status="PASS" starttime="20210530 20:13:22.474" endtime="20210530 20:13:24.769"/>
+<msg timestamp="20210531 10:59:29.980" level="INFO">Opening url 'https://miro.com/signup/'</msg>
+<status status="PASS" starttime="20210531 10:59:29.980" endtime="20210531 10:59:31.752"/>
 </kw>
 <kw name="Get started free today page should be open">
 <doc>Verifies the signup page</doc>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Get started free today</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20210530 20:13:24.779" level="INFO">Current page contains text 'Get started free today'.</msg>
-<status status="PASS" starttime="20210530 20:13:24.769" endtime="20210530 20:13:24.779"/>
+<msg timestamp="20210531 10:59:31.767" level="INFO">Current page contains text 'Get started free today'.</msg>
+<status status="PASS" starttime="20210531 10:59:31.752" endtime="20210531 10:59:31.767"/>
 </kw>
-<status status="PASS" starttime="20210530 20:13:24.769" endtime="20210530 20:13:24.779"/>
+<status status="PASS" starttime="20210531 10:59:31.752" endtime="20210531 10:59:31.767"/>
 </kw>
-<status status="PASS" starttime="20210530 20:13:22.473" endtime="20210530 20:13:24.779"/>
+<status status="PASS" starttime="20210531 10:59:29.979" endtime="20210531 10:59:31.767"/>
 </kw>
-<status status="PASS" starttime="20210530 20:13:21.215" endtime="20210530 20:13:24.779"/>
+<status status="PASS" starttime="20210531 10:59:28.686" endtime="20210531 10:59:31.768"/>
 </kw>
 <kw name="Enter Username">
 <arg>${user_name}</arg>
@@ -558,10 +558,10 @@ Without any arguments.</msg>
 <arg>id:name</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210530 20:13:24.780" level="INFO">Typing text 'Abcdefg' into text field 'id:name'.</msg>
-<status status="PASS" starttime="20210530 20:13:24.780" endtime="20210530 20:13:24.840"/>
+<msg timestamp="20210531 10:59:31.768" level="INFO">Typing text 'Abcdefg' into text field 'id:name'.</msg>
+<status status="PASS" starttime="20210531 10:59:31.768" endtime="20210531 10:59:31.829"/>
 </kw>
-<status status="PASS" starttime="20210530 20:13:24.780" endtime="20210530 20:13:24.840"/>
+<status status="PASS" starttime="20210531 10:59:31.768" endtime="20210531 10:59:31.829"/>
 </kw>
 <kw name="Enter EmailID">
 <arg>${EMPTY}</arg>
@@ -570,10 +570,10 @@ Without any arguments.</msg>
 <arg>id:email</arg>
 <arg>${emailid}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210530 20:13:24.841" level="INFO">Typing text '' into text field 'id:email'.</msg>
-<status status="PASS" starttime="20210530 20:13:24.841" endtime="20210530 20:13:24.890"/>
+<msg timestamp="20210531 10:59:31.830" level="INFO">Typing text '' into text field 'id:email'.</msg>
+<status status="PASS" starttime="20210531 10:59:31.830" endtime="20210531 10:59:31.903"/>
 </kw>
-<status status="PASS" starttime="20210530 20:13:24.840" endtime="20210530 20:13:24.890"/>
+<status status="PASS" starttime="20210531 10:59:31.829" endtime="20210531 10:59:31.903"/>
 </kw>
 <kw name="Enter Password">
 <arg>${password}</arg>
@@ -582,60 +582,60 @@ Without any arguments.</msg>
 <arg>id:password</arg>
 <arg>${pswd}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210530 20:13:24.891" level="INFO">Typing text 'P@ssw0rd_123' into text field 'id:password'.</msg>
-<status status="PASS" starttime="20210530 20:13:24.891" endtime="20210530 20:13:24.976"/>
+<msg timestamp="20210531 10:59:31.905" level="INFO">Typing text 'P@ssw0rd_123' into text field 'id:password'.</msg>
+<status status="PASS" starttime="20210531 10:59:31.904" endtime="20210531 10:59:32.038"/>
 </kw>
-<status status="PASS" starttime="20210530 20:13:24.890" endtime="20210530 20:13:24.976"/>
+<status status="PASS" starttime="20210531 10:59:31.904" endtime="20210531 10:59:32.038"/>
 </kw>
 <kw name="Select Terms Checkbox">
 <doc>Selects Terms and Privacy policy checkbox</doc>
 <kw name="Execute Javascript" library="SeleniumLibrary">
 <arg>$('#signup-terms').click()</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20210530 20:13:24.979" level="INFO">Executing JavaScript:
+<msg timestamp="20210531 10:59:32.039" level="INFO">Executing JavaScript:
 $('#signup-terms').click()
 Without any arguments.</msg>
-<status status="PASS" starttime="20210530 20:13:24.977" endtime="20210530 20:13:24.986"/>
+<status status="PASS" starttime="20210531 10:59:32.038" endtime="20210531 10:59:32.047"/>
 </kw>
-<status status="PASS" starttime="20210530 20:13:24.977" endtime="20210530 20:13:24.986"/>
+<status status="PASS" starttime="20210531 10:59:32.038" endtime="20210531 10:59:32.047"/>
 </kw>
 <kw name="Click Get started now button">
 <doc>Clicks on Get started now button</doc>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>class:signup__submit</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20210530 20:13:24.987" level="INFO">Clicking button 'class:signup__submit'.</msg>
-<status status="PASS" starttime="20210530 20:13:24.987" endtime="20210530 20:13:25.900"/>
+<msg timestamp="20210531 10:59:32.049" level="INFO">Clicking button 'class:signup__submit'.</msg>
+<status status="PASS" starttime="20210531 10:59:32.048" endtime="20210531 10:59:32.879"/>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20210530 20:13:26.299" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20210530 20:13:25.900" endtime="20210530 20:13:26.300"/>
+<msg timestamp="20210531 10:59:33.311" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-14.png"&gt;&lt;img src="selenium-screenshot-14.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210531 10:59:32.879" endtime="20210531 10:59:33.311"/>
 </kw>
-<status status="PASS" starttime="20210530 20:13:24.986" endtime="20210530 20:13:26.300"/>
+<status status="PASS" starttime="20210531 10:59:32.047" endtime="20210531 10:59:33.311"/>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <var>${get_text}</var>
 <arg>xpath://div[contains(text(),'Please enter your email address.')]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20210530 20:13:26.319" level="INFO">${get_text} = Please enter your email address.</msg>
-<status status="PASS" starttime="20210530 20:13:26.300" endtime="20210530 20:13:26.319"/>
+<msg timestamp="20210531 10:59:33.330" level="INFO">${get_text} = Please enter your email address.</msg>
+<status status="PASS" starttime="20210531 10:59:33.311" endtime="20210531 10:59:33.330"/>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <arg>Please enter your email address.</arg>
 <arg>${get_text}</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" starttime="20210530 20:13:26.320" endtime="20210530 20:13:26.320"/>
+<status status="PASS" starttime="20210531 10:59:33.330" endtime="20210531 10:59:33.331"/>
 </kw>
-<status status="PASS" starttime="20210530 20:13:21.215" endtime="20210530 20:13:26.320"/>
+<status status="PASS" starttime="20210531 10:59:28.684" endtime="20210531 10:59:33.331"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20210530 20:13:26.321" endtime="20210530 20:13:28.535"/>
+<status status="PASS" starttime="20210531 10:59:33.332" endtime="20210531 10:59:35.526"/>
 </kw>
 <doc>"Please enter your Email address" message should be displayed if no email address entered in the email text box</doc>
 <tag>Scenario5</tag>
-<status status="PASS" starttime="20210530 20:13:21.215" endtime="20210530 20:13:28.535"/>
+<status status="PASS" starttime="20210531 10:59:28.681" endtime="20210531 10:59:35.527"/>
 </test>
 <test id="s1-t6" name="User message should be displayed if invalid email address provided">
 <kw name="Invalid emailid">
@@ -647,34 +647,34 @@ the values are assigned to all variables in variables section</doc>
 <arg>about:blank</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20210530 20:13:28.535" level="INFO">Opening browser 'Chrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20210530 20:13:28.535" endtime="20210530 20:13:29.666"/>
+<msg timestamp="20210531 10:59:35.539" level="INFO">Opening browser 'Chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20210531 10:59:35.538" endtime="20210531 10:59:36.727"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20210530 20:13:29.666" endtime="20210530 20:13:29.783"/>
+<status status="PASS" starttime="20210531 10:59:36.727" endtime="20210531 10:59:36.851"/>
 </kw>
 <kw name="Go to miro singup page">
 <doc>Open Miro signup page</doc>
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${miro_signup_url}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20210530 20:13:29.783" level="INFO">Opening url 'https://miro.com/signup/'</msg>
-<status status="PASS" starttime="20210530 20:13:29.783" endtime="20210530 20:13:31.767"/>
+<msg timestamp="20210531 10:59:36.853" level="INFO">Opening url 'https://miro.com/signup/'</msg>
+<status status="PASS" starttime="20210531 10:59:36.852" endtime="20210531 10:59:38.917"/>
 </kw>
 <kw name="Get started free today page should be open">
 <doc>Verifies the signup page</doc>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Get started free today</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20210530 20:13:31.778" level="INFO">Current page contains text 'Get started free today'.</msg>
-<status status="PASS" starttime="20210530 20:13:31.768" endtime="20210530 20:13:31.779"/>
+<msg timestamp="20210531 10:59:38.928" level="INFO">Current page contains text 'Get started free today'.</msg>
+<status status="PASS" starttime="20210531 10:59:38.918" endtime="20210531 10:59:38.928"/>
 </kw>
-<status status="PASS" starttime="20210530 20:13:31.767" endtime="20210530 20:13:31.779"/>
+<status status="PASS" starttime="20210531 10:59:38.917" endtime="20210531 10:59:38.928"/>
 </kw>
-<status status="PASS" starttime="20210530 20:13:29.783" endtime="20210530 20:13:31.779"/>
+<status status="PASS" starttime="20210531 10:59:36.852" endtime="20210531 10:59:38.928"/>
 </kw>
-<status status="PASS" starttime="20210530 20:13:28.535" endtime="20210530 20:13:31.779"/>
+<status status="PASS" starttime="20210531 10:59:35.538" endtime="20210531 10:59:38.928"/>
 </kw>
 <kw name="Enter Username">
 <arg>${user_name}</arg>
@@ -683,10 +683,10 @@ the values are assigned to all variables in variables section</doc>
 <arg>id:name</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210530 20:13:31.780" level="INFO">Typing text 'Abcdefg' into text field 'id:name'.</msg>
-<status status="PASS" starttime="20210530 20:13:31.779" endtime="20210530 20:13:31.847"/>
+<msg timestamp="20210531 10:59:38.929" level="INFO">Typing text 'Abcdefg' into text field 'id:name'.</msg>
+<status status="PASS" starttime="20210531 10:59:38.929" endtime="20210531 10:59:38.990"/>
 </kw>
-<status status="PASS" starttime="20210530 20:13:31.779" endtime="20210530 20:13:31.847"/>
+<status status="PASS" starttime="20210531 10:59:38.929" endtime="20210531 10:59:38.991"/>
 </kw>
 <kw name="Enter EmailID">
 <arg>abcdef_ghij@gmil</arg>
@@ -695,10 +695,10 @@ the values are assigned to all variables in variables section</doc>
 <arg>id:email</arg>
 <arg>${emailid}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210530 20:13:31.848" level="INFO">Typing text 'abcdef_ghij@gmil' into text field 'id:email'.</msg>
-<status status="PASS" starttime="20210530 20:13:31.847" endtime="20210530 20:13:31.917"/>
+<msg timestamp="20210531 10:59:38.991" level="INFO">Typing text 'abcdef_ghij@gmil' into text field 'id:email'.</msg>
+<status status="PASS" starttime="20210531 10:59:38.991" endtime="20210531 10:59:39.057"/>
 </kw>
-<status status="PASS" starttime="20210530 20:13:31.847" endtime="20210530 20:13:31.917"/>
+<status status="PASS" starttime="20210531 10:59:38.991" endtime="20210531 10:59:39.057"/>
 </kw>
 <kw name="Enter Password">
 <arg>${password}</arg>
@@ -707,60 +707,60 @@ the values are assigned to all variables in variables section</doc>
 <arg>id:password</arg>
 <arg>${pswd}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210530 20:13:31.918" level="INFO">Typing text 'P@ssw0rd_123' into text field 'id:password'.</msg>
-<status status="PASS" starttime="20210530 20:13:31.917" endtime="20210530 20:13:32.006"/>
+<msg timestamp="20210531 10:59:39.058" level="INFO">Typing text 'P@ssw0rd_123' into text field 'id:password'.</msg>
+<status status="PASS" starttime="20210531 10:59:39.058" endtime="20210531 10:59:39.141"/>
 </kw>
-<status status="PASS" starttime="20210530 20:13:31.917" endtime="20210530 20:13:32.006"/>
+<status status="PASS" starttime="20210531 10:59:39.058" endtime="20210531 10:59:39.141"/>
 </kw>
 <kw name="Select Terms Checkbox">
 <doc>Selects Terms and Privacy policy checkbox</doc>
 <kw name="Execute Javascript" library="SeleniumLibrary">
 <arg>$('#signup-terms').click()</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20210530 20:13:32.007" level="INFO">Executing JavaScript:
+<msg timestamp="20210531 10:59:39.142" level="INFO">Executing JavaScript:
 $('#signup-terms').click()
 Without any arguments.</msg>
-<status status="PASS" starttime="20210530 20:13:32.007" endtime="20210530 20:13:32.016"/>
+<status status="PASS" starttime="20210531 10:59:39.141" endtime="20210531 10:59:39.151"/>
 </kw>
-<status status="PASS" starttime="20210530 20:13:32.007" endtime="20210530 20:13:32.016"/>
+<status status="PASS" starttime="20210531 10:59:39.141" endtime="20210531 10:59:39.151"/>
 </kw>
 <kw name="Click Get started now button">
 <doc>Clicks on Get started now button</doc>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>class:signup__submit</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20210530 20:13:32.017" level="INFO">Clicking button 'class:signup__submit'.</msg>
-<status status="PASS" starttime="20210530 20:13:32.017" endtime="20210530 20:13:32.985"/>
+<msg timestamp="20210531 10:59:39.152" level="INFO">Clicking button 'class:signup__submit'.</msg>
+<status status="PASS" starttime="20210531 10:59:39.152" endtime="20210531 10:59:40.042"/>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20210530 20:13:33.364" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20210530 20:13:32.985" endtime="20210530 20:13:33.364"/>
+<msg timestamp="20210531 10:59:40.435" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-15.png"&gt;&lt;img src="selenium-screenshot-15.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210531 10:59:40.043" endtime="20210531 10:59:40.435"/>
 </kw>
-<status status="PASS" starttime="20210530 20:13:32.017" endtime="20210530 20:13:33.364"/>
+<status status="PASS" starttime="20210531 10:59:39.152" endtime="20210531 10:59:40.435"/>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <var>${get_text}</var>
 <arg>xpath://div[contains(text(),'This doesn’t look like an email address. Please ch')]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20210530 20:13:33.382" level="INFO">${get_text} = This doesn’t look like an email address. Please check it for typos and try again.</msg>
-<status status="PASS" starttime="20210530 20:13:33.364" endtime="20210530 20:13:33.382"/>
+<msg timestamp="20210531 10:59:40.452" level="INFO">${get_text} = This doesn’t look like an email address. Please check it for typos and try again.</msg>
+<status status="PASS" starttime="20210531 10:59:40.435" endtime="20210531 10:59:40.452"/>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <arg>This doesn’t look like an email address. Please check it for typos and try again.</arg>
 <arg>${get_text}</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" starttime="20210530 20:13:33.382" endtime="20210530 20:13:33.383"/>
+<status status="PASS" starttime="20210531 10:59:40.452" endtime="20210531 10:59:40.452"/>
 </kw>
-<status status="PASS" starttime="20210530 20:13:28.535" endtime="20210530 20:13:33.383"/>
+<status status="PASS" starttime="20210531 10:59:35.537" endtime="20210531 10:59:40.453"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20210530 20:13:33.383" endtime="20210530 20:13:36.023"/>
+<status status="PASS" starttime="20210531 10:59:40.453" endtime="20210531 10:59:42.597"/>
 </kw>
 <doc>"This doesn’t look like an email address. Please check it for typos and try again." message should be displayed if invalid email addess provided</doc>
 <tag>Scenario6</tag>
-<status status="PASS" starttime="20210530 20:13:28.535" endtime="20210530 20:13:36.023"/>
+<status status="PASS" starttime="20210531 10:59:35.534" endtime="20210531 10:59:42.598"/>
 </test>
 <test id="s1-t7" name="Should not allow the user to register if already registered email address provided">
 <kw name="Already registed email address">
@@ -771,34 +771,34 @@ Without any arguments.</msg>
 <arg>about:blank</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20210530 20:13:36.023" level="INFO">Opening browser 'Chrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20210530 20:13:36.023" endtime="20210530 20:13:37.191"/>
+<msg timestamp="20210531 10:59:42.612" level="INFO">Opening browser 'Chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20210531 10:59:42.611" endtime="20210531 10:59:43.668"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20210530 20:13:37.191" endtime="20210530 20:13:37.309"/>
+<status status="PASS" starttime="20210531 10:59:43.668" endtime="20210531 10:59:43.788"/>
 </kw>
 <kw name="Go to miro singup page">
 <doc>Open Miro signup page</doc>
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${miro_signup_url}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20210530 20:13:37.309" level="INFO">Opening url 'https://miro.com/signup/'</msg>
-<status status="PASS" starttime="20210530 20:13:37.309" endtime="20210530 20:13:39.277"/>
+<msg timestamp="20210531 10:59:43.789" level="INFO">Opening url 'https://miro.com/signup/'</msg>
+<status status="PASS" starttime="20210531 10:59:43.789" endtime="20210531 10:59:45.864"/>
 </kw>
 <kw name="Get started free today page should be open">
 <doc>Verifies the signup page</doc>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Get started free today</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20210530 20:13:39.289" level="INFO">Current page contains text 'Get started free today'.</msg>
-<status status="PASS" starttime="20210530 20:13:39.278" endtime="20210530 20:13:39.289"/>
+<msg timestamp="20210531 10:59:45.876" level="INFO">Current page contains text 'Get started free today'.</msg>
+<status status="PASS" starttime="20210531 10:59:45.864" endtime="20210531 10:59:45.876"/>
 </kw>
-<status status="PASS" starttime="20210530 20:13:39.278" endtime="20210530 20:13:39.289"/>
+<status status="PASS" starttime="20210531 10:59:45.864" endtime="20210531 10:59:45.876"/>
 </kw>
-<status status="PASS" starttime="20210530 20:13:37.309" endtime="20210530 20:13:39.289"/>
+<status status="PASS" starttime="20210531 10:59:43.788" endtime="20210531 10:59:45.876"/>
 </kw>
-<status status="PASS" starttime="20210530 20:13:36.023" endtime="20210530 20:13:39.289"/>
+<status status="PASS" starttime="20210531 10:59:42.609" endtime="20210531 10:59:45.876"/>
 </kw>
 <kw name="Enter Username">
 <arg>${user_name}</arg>
@@ -807,10 +807,10 @@ Without any arguments.</msg>
 <arg>id:name</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210530 20:13:39.290" level="INFO">Typing text 'Abcdefg' into text field 'id:name'.</msg>
-<status status="PASS" starttime="20210530 20:13:39.290" endtime="20210530 20:13:39.352"/>
+<msg timestamp="20210531 10:59:45.877" level="INFO">Typing text 'Abcdefg' into text field 'id:name'.</msg>
+<status status="PASS" starttime="20210531 10:59:45.876" endtime="20210531 10:59:45.937"/>
 </kw>
-<status status="PASS" starttime="20210530 20:13:39.289" endtime="20210530 20:13:39.352"/>
+<status status="PASS" starttime="20210531 10:59:45.876" endtime="20210531 10:59:45.937"/>
 </kw>
 <kw name="Enter EmailID">
 <arg>${email_id}</arg>
@@ -819,10 +819,10 @@ Without any arguments.</msg>
 <arg>id:email</arg>
 <arg>${emailid}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210530 20:13:39.352" level="INFO">Typing text 'teabcd12345@test.com' into text field 'id:email'.</msg>
-<status status="PASS" starttime="20210530 20:13:39.352" endtime="20210530 20:13:39.414"/>
+<msg timestamp="20210531 10:59:45.938" level="INFO">Typing text 'teabcd12345@test.com' into text field 'id:email'.</msg>
+<status status="PASS" starttime="20210531 10:59:45.938" endtime="20210531 10:59:46.004"/>
 </kw>
-<status status="PASS" starttime="20210530 20:13:39.352" endtime="20210530 20:13:39.415"/>
+<status status="PASS" starttime="20210531 10:59:45.937" endtime="20210531 10:59:46.004"/>
 </kw>
 <kw name="Enter Password">
 <arg>${password}</arg>
@@ -831,60 +831,60 @@ Without any arguments.</msg>
 <arg>id:password</arg>
 <arg>${pswd}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210530 20:13:39.415" level="INFO">Typing text 'P@ssw0rd_123' into text field 'id:password'.</msg>
-<status status="PASS" starttime="20210530 20:13:39.415" endtime="20210530 20:13:39.499"/>
+<msg timestamp="20210531 10:59:46.005" level="INFO">Typing text 'P@ssw0rd_123' into text field 'id:password'.</msg>
+<status status="PASS" starttime="20210531 10:59:46.005" endtime="20210531 10:59:46.086"/>
 </kw>
-<status status="PASS" starttime="20210530 20:13:39.415" endtime="20210530 20:13:39.499"/>
+<status status="PASS" starttime="20210531 10:59:46.004" endtime="20210531 10:59:46.086"/>
 </kw>
 <kw name="Select Terms Checkbox">
 <doc>Selects Terms and Privacy policy checkbox</doc>
 <kw name="Execute Javascript" library="SeleniumLibrary">
 <arg>$('#signup-terms').click()</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20210530 20:13:39.500" level="INFO">Executing JavaScript:
+<msg timestamp="20210531 10:59:46.087" level="INFO">Executing JavaScript:
 $('#signup-terms').click()
 Without any arguments.</msg>
-<status status="PASS" starttime="20210530 20:13:39.500" endtime="20210530 20:13:39.506"/>
+<status status="PASS" starttime="20210531 10:59:46.087" endtime="20210531 10:59:46.094"/>
 </kw>
-<status status="PASS" starttime="20210530 20:13:39.499" endtime="20210530 20:13:39.506"/>
+<status status="PASS" starttime="20210531 10:59:46.087" endtime="20210531 10:59:46.094"/>
 </kw>
 <kw name="Click Get started now button">
 <doc>Clicks on Get started now button</doc>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>class:signup__submit</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20210530 20:13:39.507" level="INFO">Clicking button 'class:signup__submit'.</msg>
-<status status="PASS" starttime="20210530 20:13:39.507" endtime="20210530 20:13:40.380"/>
+<msg timestamp="20210531 10:59:46.095" level="INFO">Clicking button 'class:signup__submit'.</msg>
+<status status="PASS" starttime="20210531 10:59:46.094" endtime="20210531 10:59:47.071"/>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20210530 20:13:40.830" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20210530 20:13:40.380" endtime="20210530 20:13:40.830"/>
+<msg timestamp="20210531 10:59:47.528" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-16.png"&gt;&lt;img src="selenium-screenshot-16.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210531 10:59:47.071" endtime="20210531 10:59:47.528"/>
 </kw>
-<status status="PASS" starttime="20210530 20:13:39.506" endtime="20210530 20:13:40.830"/>
+<status status="PASS" starttime="20210531 10:59:46.094" endtime="20210531 10:59:47.529"/>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <var>${get_text}</var>
 <arg>xpath://div[contains(text(),'Sorry, this email is already registered')]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20210530 20:13:40.850" level="INFO">${get_text} = Sorry, this email is already registered</msg>
-<status status="PASS" starttime="20210530 20:13:40.830" endtime="20210530 20:13:40.850"/>
+<msg timestamp="20210531 10:59:47.556" level="INFO">${get_text} = Sorry, this email is already registered</msg>
+<status status="PASS" starttime="20210531 10:59:47.529" endtime="20210531 10:59:47.557"/>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <arg>Sorry, this email is already registered</arg>
 <arg>${get_text}</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" starttime="20210530 20:13:40.850" endtime="20210530 20:13:40.851"/>
+<status status="PASS" starttime="20210531 10:59:47.557" endtime="20210531 10:59:47.557"/>
 </kw>
-<status status="PASS" starttime="20210530 20:13:36.023" endtime="20210530 20:13:40.851"/>
+<status status="PASS" starttime="20210531 10:59:42.608" endtime="20210531 10:59:47.557"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20210530 20:13:40.851" endtime="20210530 20:13:43.060"/>
+<status status="PASS" starttime="20210531 10:59:47.558" endtime="20210531 10:59:49.777"/>
 </kw>
 <doc>Check if the system allows the user to register the account when passing already registered email address</doc>
 <tag>Scenario7</tag>
-<status status="PASS" starttime="20210530 20:13:36.023" endtime="20210530 20:13:43.060"/>
+<status status="PASS" starttime="20210531 10:59:42.606" endtime="20210531 10:59:49.778"/>
 </test>
 <test id="s1-t8" name="Verify password policy">
 <kw name="Check the password">
@@ -895,34 +895,34 @@ Without any arguments.</msg>
 <arg>about:blank</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20210530 20:13:43.060" level="INFO">Opening browser 'Chrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20210530 20:13:43.060" endtime="20210530 20:13:44.200"/>
+<msg timestamp="20210531 10:59:49.791" level="INFO">Opening browser 'Chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20210531 10:59:49.790" endtime="20210531 10:59:50.980"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20210530 20:13:44.200" endtime="20210530 20:13:44.327"/>
+<status status="PASS" starttime="20210531 10:59:50.980" endtime="20210531 10:59:51.102"/>
 </kw>
 <kw name="Go to miro singup page">
 <doc>Open Miro signup page</doc>
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${miro_signup_url}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20210530 20:13:44.329" level="INFO">Opening url 'https://miro.com/signup/'</msg>
-<status status="PASS" starttime="20210530 20:13:44.328" endtime="20210530 20:13:46.155"/>
+<msg timestamp="20210531 10:59:51.105" level="INFO">Opening url 'https://miro.com/signup/'</msg>
+<status status="PASS" starttime="20210531 10:59:51.104" endtime="20210531 10:59:53.154"/>
 </kw>
 <kw name="Get started free today page should be open">
 <doc>Verifies the signup page</doc>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Get started free today</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20210530 20:13:46.167" level="INFO">Current page contains text 'Get started free today'.</msg>
-<status status="PASS" starttime="20210530 20:13:46.155" endtime="20210530 20:13:46.168"/>
+<msg timestamp="20210531 10:59:53.167" level="INFO">Current page contains text 'Get started free today'.</msg>
+<status status="PASS" starttime="20210531 10:59:53.155" endtime="20210531 10:59:53.167"/>
 </kw>
-<status status="PASS" starttime="20210530 20:13:46.155" endtime="20210530 20:13:46.168"/>
+<status status="PASS" starttime="20210531 10:59:53.155" endtime="20210531 10:59:53.167"/>
 </kw>
-<status status="PASS" starttime="20210530 20:13:44.327" endtime="20210530 20:13:46.168"/>
+<status status="PASS" starttime="20210531 10:59:51.103" endtime="20210531 10:59:53.168"/>
 </kw>
-<status status="PASS" starttime="20210530 20:13:43.060" endtime="20210530 20:13:46.168"/>
+<status status="PASS" starttime="20210531 10:59:49.789" endtime="20210531 10:59:53.168"/>
 </kw>
 <kw name="Enter Username">
 <arg>${user_name}</arg>
@@ -931,10 +931,10 @@ Without any arguments.</msg>
 <arg>id:name</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210530 20:13:46.168" level="INFO">Typing text 'Abcdefg' into text field 'id:name'.</msg>
-<status status="PASS" starttime="20210530 20:13:46.168" endtime="20210530 20:13:46.226"/>
+<msg timestamp="20210531 10:59:53.169" level="INFO">Typing text 'Abcdefg' into text field 'id:name'.</msg>
+<status status="PASS" starttime="20210531 10:59:53.169" endtime="20210531 10:59:53.226"/>
 </kw>
-<status status="PASS" starttime="20210530 20:13:46.168" endtime="20210530 20:13:46.226"/>
+<status status="PASS" starttime="20210531 10:59:53.168" endtime="20210531 10:59:53.227"/>
 </kw>
 <kw name="Enter EmailID">
 <arg>${email_id}</arg>
@@ -943,10 +943,10 @@ Without any arguments.</msg>
 <arg>id:email</arg>
 <arg>${emailid}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210530 20:13:46.227" level="INFO">Typing text 'teabcd12345@test.com' into text field 'id:email'.</msg>
-<status status="PASS" starttime="20210530 20:13:46.227" endtime="20210530 20:13:46.297"/>
+<msg timestamp="20210531 10:59:53.227" level="INFO">Typing text 'teabcd12345@test.com' into text field 'id:email'.</msg>
+<status status="PASS" starttime="20210531 10:59:53.227" endtime="20210531 10:59:53.291"/>
 </kw>
-<status status="PASS" starttime="20210530 20:13:46.226" endtime="20210530 20:13:46.297"/>
+<status status="PASS" starttime="20210531 10:59:53.227" endtime="20210531 10:59:53.292"/>
 </kw>
 <kw name="Create List" library="BuiltIn">
 <var>@{password_list}</var>
@@ -955,8 +955,8 @@ Without any arguments.</msg>
 <arg>Welc@me1234</arg>
 <arg>Welc@me_1234</arg>
 <doc>Returns a list containing given items.</doc>
-<msg timestamp="20210530 20:13:46.297" level="INFO">@{password_list} = [ abcd | password | Welc@me1234 | Welc@me_1234 ]</msg>
-<status status="PASS" starttime="20210530 20:13:46.297" endtime="20210530 20:13:46.297"/>
+<msg timestamp="20210531 10:59:53.292" level="INFO">@{password_list} = [ abcd | password | Welc@me1234 | Welc@me_1234 ]</msg>
+<status status="PASS" starttime="20210531 10:59:53.292" endtime="20210531 10:59:53.292"/>
 </kw>
 <for flavor="IN">
 <var>${pswd}</var>
@@ -966,8 +966,8 @@ Without any arguments.</msg>
 <kw name="Log" library="BuiltIn">
 <arg>${pswd}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20210530 20:13:46.298" level="INFO">abcd</msg>
-<status status="PASS" starttime="20210530 20:13:46.298" endtime="20210530 20:13:46.298"/>
+<msg timestamp="20210531 10:59:53.292" level="INFO">abcd</msg>
+<status status="PASS" starttime="20210531 10:59:53.292" endtime="20210531 10:59:53.293"/>
 </kw>
 <kw name="Enter Password">
 <arg>${pswd}</arg>
@@ -976,18 +976,18 @@ Without any arguments.</msg>
 <arg>id:password</arg>
 <arg>${pswd}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210530 20:13:46.298" level="INFO">Typing text 'abcd' into text field 'id:password'.</msg>
-<status status="PASS" starttime="20210530 20:13:46.298" endtime="20210530 20:13:46.356"/>
+<msg timestamp="20210531 10:59:53.293" level="INFO">Typing text 'abcd' into text field 'id:password'.</msg>
+<status status="PASS" starttime="20210531 10:59:53.293" endtime="20210531 10:59:53.350"/>
 </kw>
-<status status="PASS" starttime="20210530 20:13:46.298" endtime="20210530 20:13:46.357"/>
+<status status="PASS" starttime="20210531 10:59:53.293" endtime="20210531 10:59:53.350"/>
 </kw>
 <kw name="Get Length" library="BuiltIn">
 <var>${length_pswrd}</var>
 <arg>${pswd}</arg>
 <doc>Returns and logs the length of the given item as an integer.</doc>
-<msg timestamp="20210530 20:13:46.357" level="INFO">Length is 4</msg>
-<msg timestamp="20210530 20:13:46.357" level="INFO">${length_pswrd} = 4</msg>
-<status status="PASS" starttime="20210530 20:13:46.357" endtime="20210530 20:13:46.357"/>
+<msg timestamp="20210531 10:59:53.351" level="INFO">Length is 4</msg>
+<msg timestamp="20210531 10:59:53.352" level="INFO">${length_pswrd} = 4</msg>
+<status status="PASS" starttime="20210531 10:59:53.351" endtime="20210531 10:59:53.352"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <arg>${length_pswrd} &lt;= 7</arg>
@@ -1006,34 +1006,34 @@ Without any arguments.</msg>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>xpath://div[contains(text(),'Please use 8+ characters for secure password')]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20210530 20:13:46.358" endtime="20210530 20:13:47.034"/>
+<status status="PASS" starttime="20210531 10:59:53.354" endtime="20210531 10:59:54.032"/>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <var>${get_warning}</var>
 <arg>xpath://div[contains(text(),'Please use 8+ characters for secure password')]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20210530 20:13:47.050" level="INFO">${get_warning} = Please use 8+ characters for secure password</msg>
-<status status="PASS" starttime="20210530 20:13:47.034" endtime="20210530 20:13:47.050"/>
+<msg timestamp="20210531 10:59:54.054" level="INFO">${get_warning} = Please use 8+ characters for secure password</msg>
+<status status="PASS" starttime="20210531 10:59:54.032" endtime="20210531 10:59:54.054"/>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <arg>Please use 8+ characters for secure password</arg>
 <arg>${get_warning}</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" starttime="20210530 20:13:47.050" endtime="20210530 20:13:47.050"/>
+<status status="PASS" starttime="20210531 10:59:54.054" endtime="20210531 10:59:54.054"/>
 </kw>
-<status status="PASS" starttime="20210530 20:13:46.358" endtime="20210530 20:13:47.050"/>
+<status status="PASS" starttime="20210531 10:59:53.353" endtime="20210531 10:59:54.055"/>
 </kw>
-<status status="PASS" starttime="20210530 20:13:46.357" endtime="20210530 20:13:47.050"/>
+<status status="PASS" starttime="20210531 10:59:53.352" endtime="20210531 10:59:54.055"/>
 </kw>
-<status status="PASS" starttime="20210530 20:13:46.297" endtime="20210530 20:13:47.050"/>
+<status status="PASS" starttime="20210531 10:59:53.292" endtime="20210531 10:59:54.055"/>
 </iter>
 <iter>
 <var name="${pswd}">password</var>
 <kw name="Log" library="BuiltIn">
 <arg>${pswd}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20210530 20:13:47.050" level="INFO">password</msg>
-<status status="PASS" starttime="20210530 20:13:47.050" endtime="20210530 20:13:47.050"/>
+<msg timestamp="20210531 10:59:54.055" level="INFO">password</msg>
+<status status="PASS" starttime="20210531 10:59:54.055" endtime="20210531 10:59:54.055"/>
 </kw>
 <kw name="Enter Password">
 <arg>${pswd}</arg>
@@ -1042,18 +1042,18 @@ Without any arguments.</msg>
 <arg>id:password</arg>
 <arg>${pswd}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210530 20:13:47.050" level="INFO">Typing text 'password' into text field 'id:password'.</msg>
-<status status="PASS" starttime="20210530 20:13:47.050" endtime="20210530 20:13:47.113"/>
+<msg timestamp="20210531 10:59:54.055" level="INFO">Typing text 'password' into text field 'id:password'.</msg>
+<status status="PASS" starttime="20210531 10:59:54.055" endtime="20210531 10:59:54.108"/>
 </kw>
-<status status="PASS" starttime="20210530 20:13:47.050" endtime="20210530 20:13:47.113"/>
+<status status="PASS" starttime="20210531 10:59:54.055" endtime="20210531 10:59:54.108"/>
 </kw>
 <kw name="Get Length" library="BuiltIn">
 <var>${length_pswrd}</var>
 <arg>${pswd}</arg>
 <doc>Returns and logs the length of the given item as an integer.</doc>
-<msg timestamp="20210530 20:13:47.114" level="INFO">Length is 8</msg>
-<msg timestamp="20210530 20:13:47.114" level="INFO">${length_pswrd} = 8</msg>
-<status status="PASS" starttime="20210530 20:13:47.113" endtime="20210530 20:13:47.114"/>
+<msg timestamp="20210531 10:59:54.109" level="INFO">Length is 8</msg>
+<msg timestamp="20210531 10:59:54.109" level="INFO">${length_pswrd} = 8</msg>
+<status status="PASS" starttime="20210531 10:59:54.108" endtime="20210531 10:59:54.109"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <arg>${length_pswrd} &lt;= 7</arg>
@@ -1072,34 +1072,34 @@ Without any arguments.</msg>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>xpath://div[contains(text(),'So-so password')]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20210530 20:13:47.115" endtime="20210530 20:13:47.131"/>
+<status status="PASS" starttime="20210531 10:59:54.110" endtime="20210531 10:59:54.128"/>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <var>${get_warning}</var>
 <arg>xpath://div[contains(text(),'So-so password')]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20210530 20:13:47.141" level="INFO">${get_warning} = So-so password</msg>
-<status status="PASS" starttime="20210530 20:13:47.131" endtime="20210530 20:13:47.141"/>
+<msg timestamp="20210531 10:59:54.139" level="INFO">${get_warning} = So-so password</msg>
+<status status="PASS" starttime="20210531 10:59:54.128" endtime="20210531 10:59:54.139"/>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <arg>So-so password</arg>
 <arg>${get_warning}</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" starttime="20210530 20:13:47.141" endtime="20210530 20:13:47.141"/>
+<status status="PASS" starttime="20210531 10:59:54.139" endtime="20210531 10:59:54.139"/>
 </kw>
-<status status="PASS" starttime="20210530 20:13:47.115" endtime="20210530 20:13:47.141"/>
+<status status="PASS" starttime="20210531 10:59:54.109" endtime="20210531 10:59:54.139"/>
 </kw>
-<status status="PASS" starttime="20210530 20:13:47.114" endtime="20210530 20:13:47.141"/>
+<status status="PASS" starttime="20210531 10:59:54.109" endtime="20210531 10:59:54.139"/>
 </kw>
-<status status="PASS" starttime="20210530 20:13:47.050" endtime="20210530 20:13:47.141"/>
+<status status="PASS" starttime="20210531 10:59:54.055" endtime="20210531 10:59:54.139"/>
 </iter>
 <iter>
 <var name="${pswd}">Welc@me1234</var>
 <kw name="Log" library="BuiltIn">
 <arg>${pswd}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20210530 20:13:47.141" level="INFO">Welc@me1234</msg>
-<status status="PASS" starttime="20210530 20:13:47.141" endtime="20210530 20:13:47.141"/>
+<msg timestamp="20210531 10:59:54.140" level="INFO">Welc@me1234</msg>
+<status status="PASS" starttime="20210531 10:59:54.139" endtime="20210531 10:59:54.140"/>
 </kw>
 <kw name="Enter Password">
 <arg>${pswd}</arg>
@@ -1108,18 +1108,18 @@ Without any arguments.</msg>
 <arg>id:password</arg>
 <arg>${pswd}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210530 20:13:47.142" level="INFO">Typing text 'Welc@me1234' into text field 'id:password'.</msg>
-<status status="PASS" starttime="20210530 20:13:47.142" endtime="20210530 20:13:47.203"/>
+<msg timestamp="20210531 10:59:54.140" level="INFO">Typing text 'Welc@me1234' into text field 'id:password'.</msg>
+<status status="PASS" starttime="20210531 10:59:54.140" endtime="20210531 10:59:54.201"/>
 </kw>
-<status status="PASS" starttime="20210530 20:13:47.142" endtime="20210530 20:13:47.203"/>
+<status status="PASS" starttime="20210531 10:59:54.140" endtime="20210531 10:59:54.201"/>
 </kw>
 <kw name="Get Length" library="BuiltIn">
 <var>${length_pswrd}</var>
 <arg>${pswd}</arg>
 <doc>Returns and logs the length of the given item as an integer.</doc>
-<msg timestamp="20210530 20:13:47.203" level="INFO">Length is 11</msg>
-<msg timestamp="20210530 20:13:47.203" level="INFO">${length_pswrd} = 11</msg>
-<status status="PASS" starttime="20210530 20:13:47.203" endtime="20210530 20:13:47.203"/>
+<msg timestamp="20210531 10:59:54.201" level="INFO">Length is 11</msg>
+<msg timestamp="20210531 10:59:54.201" level="INFO">${length_pswrd} = 11</msg>
+<status status="PASS" starttime="20210531 10:59:54.201" endtime="20210531 10:59:54.201"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <arg>${length_pswrd} &lt;= 7</arg>
@@ -1138,34 +1138,34 @@ Without any arguments.</msg>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>xpath://div[contains(text(),'Good password')]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20210530 20:13:47.204" endtime="20210530 20:13:47.220"/>
+<status status="PASS" starttime="20210531 10:59:54.203" endtime="20210531 10:59:54.218"/>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <var>${get_warning}</var>
 <arg>xpath://div[contains(text(),'Good password')]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20210530 20:13:47.232" level="INFO">${get_warning} = Good password</msg>
-<status status="PASS" starttime="20210530 20:13:47.220" endtime="20210530 20:13:47.232"/>
+<msg timestamp="20210531 10:59:54.228" level="INFO">${get_warning} = Good password</msg>
+<status status="PASS" starttime="20210531 10:59:54.218" endtime="20210531 10:59:54.228"/>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <arg>Good password</arg>
 <arg>${get_warning}</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" starttime="20210530 20:13:47.232" endtime="20210530 20:13:47.232"/>
+<status status="PASS" starttime="20210531 10:59:54.228" endtime="20210531 10:59:54.229"/>
 </kw>
-<status status="PASS" starttime="20210530 20:13:47.204" endtime="20210530 20:13:47.233"/>
+<status status="PASS" starttime="20210531 10:59:54.202" endtime="20210531 10:59:54.229"/>
 </kw>
-<status status="PASS" starttime="20210530 20:13:47.204" endtime="20210530 20:13:47.233"/>
+<status status="PASS" starttime="20210531 10:59:54.202" endtime="20210531 10:59:54.229"/>
 </kw>
-<status status="PASS" starttime="20210530 20:13:47.141" endtime="20210530 20:13:47.233"/>
+<status status="PASS" starttime="20210531 10:59:54.139" endtime="20210531 10:59:54.229"/>
 </iter>
 <iter>
 <var name="${pswd}">Welc@me_1234</var>
 <kw name="Log" library="BuiltIn">
 <arg>${pswd}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20210530 20:13:47.233" level="INFO">Welc@me_1234</msg>
-<status status="PASS" starttime="20210530 20:13:47.233" endtime="20210530 20:13:47.233"/>
+<msg timestamp="20210531 10:59:54.229" level="INFO">Welc@me_1234</msg>
+<status status="PASS" starttime="20210531 10:59:54.229" endtime="20210531 10:59:54.229"/>
 </kw>
 <kw name="Enter Password">
 <arg>${pswd}</arg>
@@ -1174,18 +1174,18 @@ Without any arguments.</msg>
 <arg>id:password</arg>
 <arg>${pswd}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210530 20:13:47.233" level="INFO">Typing text 'Welc@me_1234' into text field 'id:password'.</msg>
-<status status="PASS" starttime="20210530 20:13:47.233" endtime="20210530 20:13:47.292"/>
+<msg timestamp="20210531 10:59:54.231" level="INFO">Typing text 'Welc@me_1234' into text field 'id:password'.</msg>
+<status status="PASS" starttime="20210531 10:59:54.230" endtime="20210531 10:59:54.292"/>
 </kw>
-<status status="PASS" starttime="20210530 20:13:47.233" endtime="20210530 20:13:47.292"/>
+<status status="PASS" starttime="20210531 10:59:54.230" endtime="20210531 10:59:54.293"/>
 </kw>
 <kw name="Get Length" library="BuiltIn">
 <var>${length_pswrd}</var>
 <arg>${pswd}</arg>
 <doc>Returns and logs the length of the given item as an integer.</doc>
-<msg timestamp="20210530 20:13:47.293" level="INFO">Length is 12</msg>
-<msg timestamp="20210530 20:13:47.293" level="INFO">${length_pswrd} = 12</msg>
-<status status="PASS" starttime="20210530 20:13:47.292" endtime="20210530 20:13:47.293"/>
+<msg timestamp="20210531 10:59:54.293" level="INFO">Length is 12</msg>
+<msg timestamp="20210531 10:59:54.293" level="INFO">${length_pswrd} = 12</msg>
+<status status="PASS" starttime="20210531 10:59:54.293" endtime="20210531 10:59:54.293"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <arg>${length_pswrd} &lt;= 7</arg>
@@ -1204,41 +1204,41 @@ Without any arguments.</msg>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>xpath://div[contains(text(),'Great password')]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20210530 20:13:47.294" endtime="20210530 20:13:47.310"/>
+<status status="PASS" starttime="20210531 10:59:54.294" endtime="20210531 10:59:54.309"/>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <var>${get_warning}</var>
 <arg>xpath://div[contains(text(),'Great password')]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20210530 20:13:47.320" level="INFO">${get_warning} = Great password</msg>
-<status status="PASS" starttime="20210530 20:13:47.310" endtime="20210530 20:13:47.320"/>
+<msg timestamp="20210531 10:59:54.320" level="INFO">${get_warning} = Great password</msg>
+<status status="PASS" starttime="20210531 10:59:54.309" endtime="20210531 10:59:54.320"/>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <arg>Great password</arg>
 <arg>${get_warning}</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" starttime="20210530 20:13:47.321" endtime="20210530 20:13:47.321"/>
+<status status="PASS" starttime="20210531 10:59:54.320" endtime="20210531 10:59:54.320"/>
 </kw>
-<status status="PASS" starttime="20210530 20:13:47.294" endtime="20210530 20:13:47.321"/>
+<status status="PASS" starttime="20210531 10:59:54.294" endtime="20210531 10:59:54.320"/>
 </kw>
-<status status="PASS" starttime="20210530 20:13:47.293" endtime="20210530 20:13:47.321"/>
+<status status="PASS" starttime="20210531 10:59:54.293" endtime="20210531 10:59:54.320"/>
 </kw>
-<status status="PASS" starttime="20210530 20:13:47.233" endtime="20210530 20:13:47.321"/>
+<status status="PASS" starttime="20210531 10:59:54.229" endtime="20210531 10:59:54.320"/>
 </iter>
-<status status="PASS" starttime="20210530 20:13:46.297" endtime="20210530 20:13:47.321"/>
+<status status="PASS" starttime="20210531 10:59:53.292" endtime="20210531 10:59:54.320"/>
 </for>
-<status status="PASS" starttime="20210530 20:13:43.060" endtime="20210530 20:13:47.321"/>
+<status status="PASS" starttime="20210531 10:59:49.788" endtime="20210531 10:59:54.320"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20210530 20:13:47.322" endtime="20210530 20:13:49.504"/>
+<status status="PASS" starttime="20210531 10:59:54.321" endtime="20210531 10:59:56.536"/>
 </kw>
 <doc>Verifies the password meets the password policy</doc>
 <tag>Scenario9</tag>
-<status status="PASS" starttime="20210530 20:13:43.060" endtime="20210530 20:13:49.504"/>
+<status status="PASS" starttime="20210531 10:59:49.785" endtime="20210531 10:59:56.537"/>
 </test>
 <doc>Sample test for Miro signup</doc>
-<status status="PASS" starttime="20210530 20:12:52.336" endtime="20210530 20:13:49.510"/>
+<status status="PASS" starttime="20210531 10:59:00.668" endtime="20210531 10:59:56.539"/>
 </suite>
 <statistics>
 <total>
