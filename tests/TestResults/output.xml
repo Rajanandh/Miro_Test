@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0 (Python 3.9.2 on win32)" generated="20210531 14:45:29.178" rpa="false" schemaversion="2">
+<suite id="s1" name="Miro Signup test" source="C:\Users\ranan\Git\Miro\Miro_Test\tests\TestScript\Miro_Signup_test.robot">
+<test id="s1-t1" name="Successfull Signup">
+<kw name="Create Miro account">
+<doc>Successfull creation of the account to Miro</doc>
+<kw name="Open browser to signup page">
+<doc>Open the browser</doc>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210531 14:45:29.398" level="INFO">Opening browser 'Chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20210531 14:45:29.397" endtime="20210531 14:45:30.492"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210531 14:45:30.493" endtime="20210531 14:45:30.622"/>
+</kw>
+<kw name="Go to miro singup page">
+<doc>Open Miro signup page</doc>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${miro_signup_url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20210531 14:45:30.623" level="INFO">Opening url 'https://miro.com/signup/'</msg>
+<status status="PASS" starttime="20210531 14:45:30.623" endtime="20210531 14:45:33.325"/>
+</kw>
+<kw name="Get started free today page should be open">
+<doc>Verifies the signup page</doc>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Get started free today</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20210531 14:45:33.335" level="INFO">Current page contains text 'Get started free today'.</msg>
+<status status="PASS" starttime="20210531 14:45:33.325" endtime="20210531 14:45:33.335"/>
+</kw>
+<status status="PASS" starttime="20210531 14:45:33.325" endtime="20210531 14:45:33.335"/>
+</kw>
+<status status="PASS" starttime="20210531 14:45:30.622" endtime="20210531 14:45:33.335"/>
+</kw>
+<status status="PASS" starttime="20210531 14:45:29.397" endtime="20210531 14:45:33.335"/>
+</kw>
+<kw name="Enter Username">
+<arg>${user_name}</arg>
+<doc>Enters valid name or leave blank</doc>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:name</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210531 14:45:33.337" level="INFO">Typing text 'Abcdefg' into text field 'id:name'.</msg>
+<status status="PASS" starttime="20210531 14:45:33.336" endtime="20210531 14:45:33.408"/>
+</kw>
+<status status="PASS" starttime="20210531 14:45:33.335" endtime="20210531 14:45:33.409"/>
+</kw>
+<kw name="Enter EmailID">
+<arg>${email_id}</arg>
+<doc>Enters valid or invalid email address or leave blank</doc>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:email</arg>
+<arg>${emailid}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210531 14:45:33.409" level="INFO">Typing text 'teabcd12345@test.com' into text field 'id:email'.</msg>
+<status status="PASS" starttime="20210531 14:45:33.409" endtime="20210531 14:45:33.476"/>
+</kw>
+<status status="PASS" starttime="20210531 14:45:33.409" endtime="20210531 14:45:33.476"/>
+</kw>
+<kw name="Enter Password">
+<arg>${password}</arg>
+<doc>Enters valid or invalid password or leave blank</doc>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:password</arg>
+<arg>${pswd}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210531 14:45:33.477" level="INFO">Typing text 'P@ssw0rd_123' into text field 'id:password'.</msg>
+<status status="PASS" starttime="20210531 14:45:33.477" endtime="20210531 14:45:33.556"/>
+</kw>
+<status status="PASS" starttime="20210531 14:45:33.477" endtime="20210531 14:45:33.556"/>
+</kw>
+<kw name="Select Terms Checkbox">
+<doc>Selects Terms and Privacy policy checkbox</doc>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>$('#signup-terms').click()</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20210531 14:45:33.557" level="INFO">Executing JavaScript:
+$('#signup-terms').click()
+Without any arguments.</msg>
+<status status="PASS" starttime="20210531 14:45:33.557" endtime="20210531 14:45:33.564"/>
+</kw>
+<status status="PASS" starttime="20210531 14:45:33.556" endtime="20210531 14:45:33.565"/>
+</kw>
+<kw name="Click on Get started now button">
+<doc>Clicks on Get started now</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210531 14:45:33.963" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210531 14:45:33.565" endtime="20210531 14:45:33.964"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>class:signup__submit</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20210531 14:45:33.964" level="INFO">Clicking button 'class:signup__submit'.</msg>
+<status status="PASS" starttime="20210531 14:45:33.964" endtime="20210531 14:45:34.877"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210531 14:45:35.280" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210531 14:45:34.877" endtime="20210531 14:45:35.280"/>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<var>${page_title}</var>
+<doc>Returns the title of the current page.</doc>
+<msg timestamp="20210531 14:45:35.285" level="INFO">${page_title} = Sign up | Miro | Online Whiteboard for Visual Collaboration</msg>
+<status status="PASS" starttime="20210531 14:45:35.280" endtime="20210531 14:45:35.285"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>"${page_title}" == "Please check your email, Online Whiteboard | Miro"</arg>
+<arg>Verify email confirmation page opened</arg>
+<arg>ELSE</arg>
+<arg>Existing email id</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Existing email id">
+<doc>Verifies the message if existing email id provided</doc>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${get_text}</var>
+<arg>xpath://div[contains(text(),'Sorry, this email is already registered')]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20210531 14:45:35.304" level="INFO">${get_text} = Sorry, this email is already registered</msg>
+<status status="PASS" starttime="20210531 14:45:35.286" endtime="20210531 14:45:35.305"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>Sorry, this email is already registered</arg>
+<arg>${get_text}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20210531 14:45:35.305" endtime="20210531 14:45:35.305"/>
+</kw>
+<status status="PASS" starttime="20210531 14:45:35.286" endtime="20210531 14:45:35.305"/>
+</kw>
+<status status="PASS" starttime="20210531 14:45:35.285" endtime="20210531 14:45:35.305"/>
+</kw>
+<status status="PASS" starttime="20210531 14:45:33.565" endtime="20210531 14:45:35.305"/>
+</kw>
+<status status="PASS" starttime="20210531 14:45:29.396" endtime="20210531 14:45:35.305"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210531 14:45:35.306" endtime="20210531 14:45:37.517"/>
+</kw>
+<doc>This test case will verify the successfull creation of the account with Miro.</doc>
+<tag>Scenario1</tag>
+<status status="PASS" starttime="20210531 14:45:29.372" endtime="20210531 14:45:37.517"/>
+</test>
+<doc>Sample test for Miro signup</doc>
+<status status="PASS" starttime="20210531 14:45:29.180" endtime="20210531 14:45:37.526"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Scenario1</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Miro Signup test">Miro Signup test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
