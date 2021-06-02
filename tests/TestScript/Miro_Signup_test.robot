@@ -6,6 +6,7 @@ Library    SeleniumScreenshots
 Library    DateTime
 Library    XML
 Library    Reserved
+Test Setup   Open browser to signup page
 Test Teardown  Close Browser
 
 *** Variables ***
@@ -75,7 +76,6 @@ Get started free today page should be open
         
 Create Miro account
     [Documentation]  Successfull creation of the account to Miro
-    Open browser to signup page
     Enter Username  ${user_name}
     Enter EmailID  ${email_id}
     Enter Password  ${password}
@@ -84,7 +84,6 @@ Create Miro account
     
 Do not select Terms and Privacy policy
     [Documentation]  Do not select the Terms and Privacy policy checkbox
-    Open browser to signup page
     Enter Username  ${user_name}
     Enter EmailID  ${email_id}
     Enter Password  ${password}
@@ -94,7 +93,6 @@ Do not select Terms and Privacy policy
 
 Do not enter the password
     [Documentation]  Leave password text box blank and check the user message
-    Open browser to signup page
     Enter Username  ${user_name}
     Enter EmailID  ${email_id}
     Enter Password  ${EMPTY}
@@ -105,7 +103,6 @@ Do not enter the password
 
 Do not enter Name
     [Documentation]  Leave Name text box blank and check the user message
-    Open browser to signup page
     Enter Username  ${EMPTY}
     Enter EmailID  ${email_id}
     Enter Password  ${password}
@@ -117,7 +114,6 @@ Do not enter Name
 
 Do not enter email
     [Documentation]  Leave email address text box blank and check the user message
-    Open browser to signup page
     Enter Username  ${user_name}
     Enter EmailID    ${EMPTY}
     Enter Password  ${password}
@@ -129,7 +125,6 @@ Do not enter email
 Invalid emailid
     [Documentation]  Enter invalid or incomplete email address in email text box and check the user message.
     ...  the values are assigned to all variables in variables section
-    Open browser to signup page
     Enter Username  ${user_name}
     Enter EmailID  abcdef_ghij@gmil
     Enter Password  ${password}
@@ -140,7 +135,6 @@ Invalid emailid
 
 Already registed email address
     [Documentation]  Enter already registered email id and check whether the message to the user is prompt
-    Open browser to signup page
     Enter Username  ${user_name}
     Enter EmailID  ${email_id}
     Enter Password  ${password}
@@ -151,7 +145,6 @@ Already registed email address
 
 Check the password
     [Documentation]  Throws warning message if the password not meets the password policy.
-    Open browser to signup page
     Enter Username  ${user_name}
     Enter EmailID  ${email_id}
     @{password_list} =    Create List    abcd  password   Welc@me1234   Welc@me_1234
